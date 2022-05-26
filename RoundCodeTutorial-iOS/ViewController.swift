@@ -91,6 +91,14 @@ extension ViewController: RCCameraViewControllerDelegate {
     private func scan() {
         let cameraController = RCCameraViewController()
         cameraController.delegate = self
+        
+        // MARK: - Custom Configuration
+        
+        let configuration = RCCoderConfiguration.shortConfiguration
+        let coder = RCCoder(configuration: configuration)
+        
+        cameraController.coder = coder
+        
         present(cameraController, animated: true)
     }
     
