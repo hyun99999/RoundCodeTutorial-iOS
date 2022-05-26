@@ -48,7 +48,6 @@
 				66A58A4FFC4B282BF1B70446 /* Pods-RoundCodeTutorial-iOS.debug.xcconfig */,
 				5BB86CA1D88E17745C1575EE /* Pods-RoundCodeTutorial-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -360,11 +359,13 @@
 				DEVELOPMENT_TEAM = T8C9SSEX5G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "RoundCodeTutorial-iOS/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "code 를 스캔하기위해서 카메라 권한을 허락 해주세요.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,11 +390,13 @@
 				DEVELOPMENT_TEAM = T8C9SSEX5G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "RoundCodeTutorial-iOS/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "code 를 스캔하기위해서 카메라 권한을 허락 해주세요.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
