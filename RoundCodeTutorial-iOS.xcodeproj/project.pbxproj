@@ -359,6 +359,7 @@
 				DEVELOPMENT_TEAM = T8C9SSEX5G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "RoundCodeTutorial-iOS/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "code 를 스캔하기위해서 카메라 권한을 허락 해주세요.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -389,6 +390,7 @@
 				DEVELOPMENT_TEAM = T8C9SSEX5G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "RoundCodeTutorial-iOS/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "code 를 스캔하기위해서 카메라 권한을 허락 해주세요.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
