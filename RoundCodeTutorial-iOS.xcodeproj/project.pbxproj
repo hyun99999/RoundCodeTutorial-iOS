@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41D0B694054D9F395A39B10D /* Pods_RoundCodeTutorial_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E534066ADB42A01D4F7FF2 /* Pods_RoundCodeTutorial_iOS.framework */; };
 		F895C422283F97DB009602B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F895C421283F97DB009602B4 /* AppDelegate.swift */; };
 		F895C424283F97DB009602B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F895C423283F97DB009602B4 /* SceneDelegate.swift */; };
 		F895C426283F97DB009602B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F895C425283F97DB009602B4 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54E534066ADB42A01D4F7FF2 /* Pods_RoundCodeTutorial_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoundCodeTutorial_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB86CA1D88E17745C1575EE /* Pods-RoundCodeTutorial-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundCodeTutorial-iOS.release.xcconfig"; path = "Target Support Files/Pods-RoundCodeTutorial-iOS/Pods-RoundCodeTutorial-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		66A58A4FFC4B282BF1B70446 /* Pods-RoundCodeTutorial-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundCodeTutorial-iOS.debug.xcconfig"; path = "Target Support Files/Pods-RoundCodeTutorial-iOS/Pods-RoundCodeTutorial-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F895C41E283F97DB009602B4 /* RoundCodeTutorial-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RoundCodeTutorial-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F895C421283F97DB009602B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F895C423283F97DB009602B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D0B694054D9F395A39B10D /* Pods_RoundCodeTutorial_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111908B02AA6F7DD0F57BB41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66A58A4FFC4B282BF1B70446 /* Pods-RoundCodeTutorial-iOS.debug.xcconfig */,
+				5BB86CA1D88E17745C1575EE /* Pods-RoundCodeTutorial-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		652CB7B862AA9D35D3475BD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54E534066ADB42A01D4F7FF2 /* Pods_RoundCodeTutorial_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F895C415283F97DB009602B4 = {
 			isa = PBXGroup;
 			children = (
 				F895C420283F97DB009602B4 /* RoundCodeTutorial-iOS */,
 				F895C41F283F97DB009602B4 /* Products */,
+				111908B02AA6F7DD0F57BB41 /* Pods */,
+				652CB7B862AA9D35D3475BD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F895C432283F97DB009602B4 /* Build configuration list for PBXNativeTarget "RoundCodeTutorial-iOS" */;
 			buildPhases = (
+				6EF5453C55BE3DA94FC18CC8 /* [CP] Check Pods Manifest.lock */,
 				F895C41A283F97DB009602B4 /* Sources */,
 				F895C41B283F97DB009602B4 /* Frameworks */,
 				F895C41C283F97DB009602B4 /* Resources */,
+				CCC4183B2A6F11CDAD2E61EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EF5453C55BE3DA94FC18CC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoundCodeTutorial-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCC4183B2A6F11CDAD2E61EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoundCodeTutorial-iOS/Pods-RoundCodeTutorial-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoundCodeTutorial-iOS/Pods-RoundCodeTutorial-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoundCodeTutorial-iOS/Pods-RoundCodeTutorial-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F895C41A283F97DB009602B4 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		F895C433283F97DB009602B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66A58A4FFC4B282BF1B70446 /* Pods-RoundCodeTutorial-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		F895C434283F97DB009602B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BB86CA1D88E17745C1575EE /* Pods-RoundCodeTutorial-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

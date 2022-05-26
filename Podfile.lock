@@ -1,0 +1,16 @@
+PODS:
+  - RoundCode (1.3.0)
+
+DEPENDENCIES:
+  - RoundCode
+
+SPEC REPOS:
+  trunk:
+    - RoundCode
+
+SPEC CHECKSUMS:
+  RoundCode: 562f3bde81c80aa3f71f6dccd64aa6739dd2e519
+
+PODFILE CHECKSUM: ce70f62519380f92c6d4484e4e09ac1ded379c3e
+
+COCOAPODS: 1.11.2
