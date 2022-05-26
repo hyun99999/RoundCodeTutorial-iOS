@@ -66,6 +66,17 @@ extension ViewController {
             // handle errors
         }
     }
+    
+    private func setAddTargets() {
+        cameraButton.addTarget(self, action: #selector(touchCameraButton), for: .touchUpInside)
+    }
+    
+    // MARK: - @Objc Methods
+    
+    @objc
+    private func touchCameraButton() {
+        self.scan()
+    }
 }
 
 // MARK: - RCCameraViewControllerDelegate
