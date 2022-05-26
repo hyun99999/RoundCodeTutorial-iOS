@@ -32,8 +32,16 @@ class ViewController: UIViewController {
 
 extension ViewController {
     private func setCode() {
-        let image = RCImage(message: "Hello, i am hyungyu")
+        var image = RCImage(message: "Hello, i am hyungyu")
         let coder = RCCoder()
+        
+        // MARK: - Appearance
+        
+        image.contentInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        image.attachmentImage = UIImage(named: "fishbowl")
+        image.size = 300
+        image.tintColors = [.orange, .red]
+        image.gradientType = .radial
         
         // MARK: - Error Handling
         
