@@ -48,8 +48,13 @@ class ViewController: UIViewController {
 
 extension ViewController {
     private func setCode() {
-        var image = RCImage(message: "Hello, i am hyungyu")
-        let coder = RCCoder()
+        var image = RCImage(message: "hello i am hyungyu")
+//        let coder = RCCoder()
+        
+        // MARK: - custom configuration
+        
+        let configuration = RCCoderConfiguration.shortConfiguration
+        let coder = RCCoder(configuration: configuration)
         
         // MARK: - Appearance
         
