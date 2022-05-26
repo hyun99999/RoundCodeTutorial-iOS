@@ -7,4 +7,5 @@ target 'RoundCodeTutorial-iOS' do
 
   # Pods for RoundCodeTutorial-iOS
   pod 'RoundCode'
+  pod 'Then'
 end
