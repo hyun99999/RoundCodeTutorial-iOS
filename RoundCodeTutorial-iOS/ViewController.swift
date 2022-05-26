@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         
         setCode()
         setLayout()
+        setAddTargets()
     }
 }
 
