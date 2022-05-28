@@ -68,8 +68,16 @@ extension ViewController {
         
         do {
             imageView.image = try coder.encode(image)
+        } catch RCError.invalidCharacter {
+            
+        } catch RCError.longText {
+            
+        } catch RCError.wrongImageSize {
+            
+        } catch RCError.decoding {
+            
         } catch {
-            // handle errors
+            // catch any other errors
         }
     }
     
